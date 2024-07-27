@@ -1,0 +1,138 @@
+/* General */
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    margin: 0px;
+    background-color: #f8f8f8;
+}
+p,h1,h2,li,a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #0e0e0e;
+}
+/* Header */
+header{
+    display:  flex;
+    justify-content: space-between;
+    padding: 1vh;
+    height: fit-content;
+    z-index: 1;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+menu{
+    display: flex;
+    padding-right: 2vh;
+}
+menu li{
+    list-style: none;
+    margin: 1vh;
+}
+menu li a{
+    text-decoration: none;
+    color: #bababa;
+    font-size: 1em;
+    font-weight: bold;
+}
+menu li a:hover{
+    color: #0e0e0e;
+    transition: all .5s linear;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social i{
+    padding: 1vh;
+}
+.social a{
+    color: #bababa;
+    font-size: 2em;
+}
+.social a:hover{
+    color: #0e0e0e;
+    transition: all .5s linear;
+}
+/* Footer */
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #f8f8f8;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+footer div{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+/* Index page */
+.top-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+p{
+    display: flex;
+    justify-content: center;
+}
+.sec-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    height: 200vh;
+    width: 100%;
+}
+.display{
+    width: 100%;
+    height: 40vh;
+    padding: 2vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
+.display-top{
+    grid-column: 1/3;
+}
+.text-box{
+    width: 90%;
+    font-size: 1em;
+    padding-right: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.display .img-box{
+    margin: 5vh;
+}
+.display img{
+    width: 100%;
+    height: auto;
+}
+button{
+    margin-top: 2vh;
+    background-color: gray;
+    border: none;
+    border-radius: 25px;
+    height: 5vh;
+}
+button:hover{
+    background-color: blue;
+    transition: all .25s linear;
+}
+button a{
+    padding: 5vh;
+    font-size: 2em;
+    color: #f8f8f8;
+    text-decoration: none;
+}
