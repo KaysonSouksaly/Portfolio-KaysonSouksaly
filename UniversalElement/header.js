@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <menu>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about-me.html">ABOUT ME</a></li>
-                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="https://drive.google.com/file/d/1goa6naZhOdgK2YE_nFqsP53TlCMZOL0x/view?pli=1">RESUME</a></li>
             </menu>
         </header>
     `;

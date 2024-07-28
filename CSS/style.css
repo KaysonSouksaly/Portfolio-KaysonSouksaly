@@ -11,6 +11,16 @@ p,h1,h2,li,a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #0e0e0e;
 }
+main {
+    text-align: center;
+}
+/* Resume */
+.pdf {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+}
+
 /* Header */
 header{
     display:  flex;
@@ -55,6 +65,7 @@ menu li a:hover{
     color: #0e0e0e;
     transition: all .5s linear;
 }
+
 /* Footer */
 footer{
     width: 100%;
