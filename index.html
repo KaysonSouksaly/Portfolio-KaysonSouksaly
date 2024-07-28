@@ -6,54 +6,63 @@
     <link rel="stylesheet" href="./site-css/style.css">
     <!-- BootStrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script defer src="js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7daddba741.js" crossorigin="anonymous"></script>
     <title>Kayson Souksaly</title>
 </head>
 <body>
     <script src="./UniversalElement/header.js"></script>
-    <main>
+    <main class="container text-center">
         <section class="top-page">
-            <h1 id="index-header">Hi, My name is Kayson!</h1>
+            <h1 id="index-header" class="pt-5">Hi, My name is Kayson!</h1>
             <h2>I'm a College student from Georgian College <br>with a passion for web design and full-stack development!</h2>
         </section>
-        <section class="sec-1 project">
-            <div class="display">
+        <section>
+            <div class="container d-flex flex-column justify-content-center">
                 <div class="display-top">
-                    <h1>Big Projects</h1>
+                    <h1 class="pt-5">Big Projects</h1>
                     <p>These are projects I have successfully completed during my studies</p>
                 </div>
-                <!-- Row 1 -->
-                <div class="img-box">
-                    <img src="./Imgs/Digiseller.png" alt="swedish-berry">
-                </div>
-                <div class="text-box">
-                    <h2>Digiseller</h2>
-                    <p>Digiseller is my final project for a CSS design class. It implements my use of HTML, CSS, JavaScript. 
-                    It was previously done in PHP for a better universal header and footer. However it was migrated fully on 
-                    Javascript as I host my pages in Github, which does not support PHP</p>
-                    <button><a href="https://kaysonsouksaly.github.io/Digiseller/">View Site</a></button>
-                </div>
-                <!-- Row 2 -->
-                <div class="text-box">
-                    <h2>Swedish Berry</h2>
-                    <p>Another project I did before for CSS design class, this site is less refined.
-                     However it shows my application of radio buttons, animations, Javascript, and creation of carousels</p>
-                     <button><a href="https://kaysonsouksaly.github.io/assignement3-1332/">View Site</a></button>
-                </div>
-                <div class="img-box">
-                    <img src="./Imgs/swedish-berry.png" alt="swedish-berry">
-                </div>
-                <!-- Row 3 -->
-                <div class="img-box">
-                    <img src="./Imgs/loan-application.png" alt="loan-application">
-                </div>
-                <div class="text-box">
-                    <h2>Loan Application</h2>
-                    <p>I've created a loan application using HTML, CSS, PHP, JavaScript and MySQL Databases. It was to demonstrate my ability to
-                        to use MySQL and PHP for server side application with a login, store and retrieve data from the Databases.
-                        I further my work with a demo of a simple APR calculator, monthly and yearly payments, and eligibility for the loan.
-                    </p>
+                <!-- Card group -->
+                <div class="card-group">
+                    <!-- Card 1 -->
+                    <div class="card">
+                      <img class="card-img-top" src="./Imgs/Digiseller.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Digiseller</h5>
+                        <p class="card-text">
+                            Digiseller is my final project for a CSS design class. It implements my use of HTML, CSS, JavaScript.
+                            It was previously done in PHP for a better universal header and footer. However it was migrated fully on
+                            Javascript as I host my pages in Github, which does not support PHP.
+                        </p>
+                        <a href="https://kaysonsouksaly.github.io/Digiseller/" class="btn btn-primary">View Site</a>
+                      </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                      <img class="card-img-top" src="./Imgs/swedish-berry.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Swedish Berry</h5>
+                        <p class="card-text">
+                            Another project I did before for CSS design class, this site is less refined.
+                            However it shows my application of radio buttons, animations, Javascript, and creation of carousels
+                        </p>
+                        <a href="https://kaysonsouksaly.github.io/assignement3-1332/" class="btn btn-primary">View Site</a>
+                      </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card">
+                      <img class="card-img-top" src="./Imgs/loan-application.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Loan Application</h5>
+                        <p class="card-text">
+                            I've created a loan application using HTML, CSS, PHP, JavaScript and MySQL Databases. It was to demonstrate my ability to
+                            to use MySQL and PHP for server side application with a login, store and retrieve data from the Databases.
+                            I further my work with a demo of a simple APR calculator, monthly and yearly payments, and eligibility for the loan.
+                        </p> 
+                      </div>
+                    </div>
                 </div>
             </div>
         </section>
