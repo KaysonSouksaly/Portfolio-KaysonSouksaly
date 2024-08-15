@@ -3,70 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./site-css/style.css">
-    <!-- BootStrap -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <!-- CSS Styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7daddba741.js" crossorigin="anonymous"></script>
     <title>Kayson Souksaly</title>
 </head>
 <body>
-    <script src="./UniversalElement/header.js"></script>
-    <main class="container text-center">
-        <section class="top-page">
-            <h1 id="index-header" class="pt-5">Hi, My name is Kayson!</h1>
-            <h2>I'm a College student from Georgian College <br>with a passion for web design and full-stack development!</h2>
-        </section>
-        <section>
-            <div class="container d-flex flex-column justify-content-center">
-                <div class="display-top">
-                    <h1 class="pt-5">Big Projects</h1>
-                    <p>These are projects I have successfully completed during my studies</p>
+    <section id="home" class="hero-section">
+        <img src="imgs/self-portrait2-square.jpg" alt="Self-portrait" id="self-portrait" loading="lazy">
+        <h1>Hi, I'm Kayson Souksaly!</h1>
+        <p>A computer programming student at Georgian College <br>with a passion for Web Development.</p>
+        <a href="#projects" class="cta">View My Work</a>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <!-- Page Carousel that cycle through my Projects -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item active" id="item1">
+                    <h2>Digiseller</h2>
+                    <img src="imgs/Digiseller.png" alt="Digiseller" loading="lazy">
                 </div>
-                <!-- Card group -->
-                <div class="card-group">
-                    <!-- Card 1 -->
-                    <div class="card">
-                      <img class="card-img-top" src="./Imgs/Digiseller.png" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Digiseller</h5>
-                        <p class="card-text">
-                            Digiseller is my final project for a CSS design class. It implements my use of HTML, CSS, JavaScript.
-                            It was previously done in PHP for a better universal header and footer. However it was migrated fully on
-                            Javascript as I host my pages in Github, which does not support PHP.
-                        </p>
-                        <a href="https://kaysonsouksaly.github.io/Digiseller/" class="btn btn-primary">View Site</a>
-                      </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="card">
-                      <img class="card-img-top" src="./Imgs/swedish-berry.png" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Swedish Berry</h5>
-                        <p class="card-text">
-                            Another project I did before for CSS design class, this site is less refined.
-                            However it shows my application of radio buttons, animations, Javascript, and creation of carousels
-                        </p>
-                        <a href="https://kaysonsouksaly.github.io/assignement3-1332/" class="btn btn-primary">View Site</a>
-                      </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="card">
-                      <img class="card-img-top" src="./Imgs/loan-application.png" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Loan Application</h5>
-                        <p class="card-text">
-                            I've created a loan application using HTML, CSS, PHP, JavaScript and MySQL Databases. It was to demonstrate my ability to
-                            to use MySQL and PHP for server side application with a login, store and retrieve data from the Databases.
-                            I further my work with a demo of a simple APR calculator, monthly and yearly payments, and eligibility for the loan.
-                        </p> 
-                      </div>
-                    </div>
+                <div class="carousel-item" id="item2">
+                    <h2>Swedish Berry</h2>
+                    <img src="imgs/swedish-berry.png" alt="Swedish Berry" loading="lazy">
+                </div>
+                <div class="carousel-item" id="item3">
+                    <h2>Loan System</h2>
+                    <img src="imgs/loan-application.png" alt="Loan Application" loading="lazy">
                 </div>
             </div>
-        </section>
-    </main>
-    <script src="./UniversalElement/footer.js"></script>
+
+            <!-- Radio buttons to navigate carousel -->
+            <div class="carousel-navigation">
+                <input type="radio" name="carousel" id="radio1" checked>
+                <label for="radio1"></label>
+                <input type="radio" name="carousel" id="radio2">
+                <label for="radio2"></label>
+                <input type="radio" name="carousel" id="radio3">
+                <label for="radio3"></label>
+            </div>
+            <button class="back-btn" id="back-btn">&#10094;</button>
+            <button class="next-btn" id="next-btn">&#10095;</button>
+        </div>
+
+        <!-- Project list -->
+        <div class="project-list">
+            <div class="project-item">
+                <img src="imgs/Digiseller.png" alt="Digiseller" loading="lazy">
+                <h3>Digiseller</h3>
+                <p>
+                    Digiseller is my final project for a CSS design class. It implements my use of HTML, CSS, 
+                    JavaScript. It was previously done in PHP for a better universal header and footer. 
+                    However it was migrated fully on Javascript as I host my pages in Github, which does not support PHP.
+                </p>
+                <a href="https://kaysonsouksaly.github.io/Digiseller/" class="project-link">View Project</a>
+            </div>
+            <div class="project-item">
+                <img src="imgs/swedish-berry.png" alt="Swedish Berry" loading="lazy">
+                <h3>Swedish Berry</h3>
+                <p>
+                    Another project I did before for CSS design class, this site is less refined. 
+                    However it shows my application of radio buttons, animations, Javascript, and creation of carousels
+                </p>
+                <a href="https://kaysonsouksaly.github.io/assignement3-1332/" class="project-link">View Project</a>
+            </div>
+            <div class="project-item">
+                <img src="imgs/loan-application.png" alt="Loan Application" loading="lazy">
+                <h3>Loan System</h3>
+                <p>
+                    I've created a loan application using HTML, CSS, PHP, JavaScript and MySQL Databases. 
+                    It was to demonstrate my ability to to use MySQL and PHP for server side application with a login, 
+                    store and retrieve data from the Databases. I further my work with a demo of a simple APR calculator, 
+                    monthly and yearly payments, and eligibility for the loan.
+                </p>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
